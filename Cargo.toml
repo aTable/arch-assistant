@@ -1,0 +1,22 @@
+[package]
+name = "arch-assistant"
+version = "0.1.0"
+authors = ["aTable <goforthejuggular@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tui = "0.10"
+termion = "1.5"
+bitflags = "1.0"
+cassowary = "0.3"
+unicode-segmentation = "1.2"
+unicode-width = "0.1"
+rustbox = { version = "0.11", optional = true }
+crossterm = { version = "0.17", optional = true }
+easycurses = { version = "0.12.2", optional = true }
+pancurses = { version = "0.16.1", optional = true, features = ["win32a"] }
+serde = { version = "1", "optional" = true, features = ["derive"]}
+rand = "0.7"
+argh = "0.1"
